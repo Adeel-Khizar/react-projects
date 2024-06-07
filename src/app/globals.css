@@ -26,6 +26,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.buttons span{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  color: #000;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
