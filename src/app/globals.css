@@ -40,3 +40,34 @@ body {
     text-wrap: balance;
   }
 }
+
+
+h1{
+  font-size: 1.4rem;
+}
+.card {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: #3b3b3b;
+  justify-content: space-between;
+  margin-bottom:15px;
+}
+.card_image {
+  width: 60px;
+  height: 60px;
+  flex: none;
+}
+.card_image img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.card button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  align-self: center;
+  border-radius: .4rem;
+}

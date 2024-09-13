@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} flex min-h-screen flex-col justify-between p-10`}>
         <header className="w-full flex items-center gap-2 justify-between">
         <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert hidden"
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
