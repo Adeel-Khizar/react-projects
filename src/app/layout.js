@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex min-h-screen flex-col justify-between p-10`}>
-        <header className="w-full flex items-center gap-2 justify-between">
+      <body className={`${inter.className} flex min-h-screen flex-col justify-between`}>
+        <header className="w-full flex items-center gap-2 justify-between container mx-auto">
         <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert hidden"
             src="/next.svg"
@@ -23,15 +23,15 @@ export default function RootLayout({ children }) {
             priority
           />
           <div>
-            <ul className="flex gap-4">
+            <ul className="flex gap-4 py-10">
               <li className="cursor-pointer">Home</li>
               <li className="cursor-pointer">About</li>
               <li className="cursor-pointer">Contact</li>
             </ul>
           </div>
         </header>
-        <div>{children}</div>
-        <footer>
+        <div className="container mx-auto">{children}</div>
+        <footer className="container mx-auto">
         <p>All CopyRight Reserved by me!</p>
       </footer>
       </body>
