@@ -1,8 +1,9 @@
-import Practice3 from "./components/Practice3";
+import Mycard from "./components/Mycard";
+import UseEffect from "./components/UseEffect";
 export default function Home() {
   return (
     <main >
-      <Practice3/>
+       <UseEffect/>
     </main>
   );
 }

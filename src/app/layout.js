@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex min-h-screen flex-col justify-between`}>
+      <body className={`${inter.className} min-h-screen`}>
         <header className="w-full flex items-center gap-2 justify-between container mx-auto">
         <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert hidden"
@@ -31,9 +31,6 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <div className="container mx-auto">{children}</div>
-        <footer className="container mx-auto">
-        <p>All CopyRight Reserved by me!</p>
-      </footer>
       </body>
     </html>
   );
